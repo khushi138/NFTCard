@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NFT Component Card</title>
+            <style>
+        
+                body {
+                    background-color: hsl(217, 54%, 11%);
+                    font-family: "Raleway", sans-serif;
+                }
+                .container {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    max-width: 300px;
+                    margin: auto;
+                    text-align: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    /* Add empty space above the container (20% of the view height) */
+                    margin-top: 10vh;
+                    margin-bottom: 10vh;
+                }
+
+                .card {
+                    /* Change background color */
+                    background-color: hsl(216, 50%, 16%);
+                    /* Add space between the border and the content */
+                    padding: 18px;
+
+                    border-radius: 18px;
+                }
+
+                .first_img {
+                    width:100%;
+                    height:250px;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+                .card-content {
+                     padding:5px;
+                }
+                .name {
+                    color:aliceblue;
+                    font-size: 18px;
+                    font-weight: 100;
+                    margin-top: 16px;
+                }
+                .parent {
+                    width: 100%;
+                    white-space: nowrap;
+                    
+                }
+                
+                .child {
+                    display: inline-block;
+                    width:50%;
+                    
+                }
+                .pic {
+                    float:left; 
+                    padding-right: 0.3rem ;
+                }
+
+                .picLast {
+                    border: solid white;
+                    width: 25px;
+                    height:25px;
+                    float:left;
+                    margin-right: 1rem;
+                    border-radius: 15px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+            <img src="images/image-equilibrium.jpg" alt="Equilibrium"  class="first_img">
+
+            <div class="card-content">
+            <div class="name"> Equilibrium #3429</div>
+    
+
+            <p style="color: rgb(185, 185, 16);">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="parent">
+                <div class="child">
+                    <img src="images/icon-ethereum.svg" class="pic">
+                        <span style="color: aqua;"> 0.041ETH </span>
+                    </div>
+                    <div class="child">
+                        <img src="images/icon-clock.svg" class="pic">
+                        <span style="color: rgb(169, 177, 174);">3 days left</span>
+                    </div>
+            </div>
+            <hr style="color: hsl(215, 32%, 27%);">
+            <div>
+                <img src="images/image-avatar.png" class="picLast">
+                <p style="color:rgb(169, 177, 174);"> Creation of <span style="color:white;"> Jules Wyvren</span> </p>
+            </div>
+        </div>
+
+            </div>
+        </div>
+    </body>
+</html>
